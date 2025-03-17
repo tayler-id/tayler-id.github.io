@@ -1,0 +1,205 @@
+/* 
+ * Element-specific Animations for Portfolio
+ * Contains animations for specific website elements
+ */
+
+@import url('base-animations.css');
+@import url('advanced-animations.css');
+
+/* Hero Section Text Animation */
+.hero-title span {
+  display: inline-block;
+}
+
+.hero-title .text-coral {
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+.hero-title .text-teal {
+  animation: textGlow 3s ease-in-out infinite 1s;
+}
+
+/* Logo Animation */
+.logo-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.logo img {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Custom cursor animations */
+.cursor-animation-1 {
+  animation: pulseScale 3s ease-in-out infinite;
+}
+
+.cursor-animation-2 {
+  animation: rotate 8s linear infinite;
+}
+
+/* Hamburger Menu Animation */
+.hamburger-menu {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--color-coral);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.hamburger-menu span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger-menu span:nth-child(2),
+.hamburger-menu span:nth-child(3) {
+  top: 10px;
+}
+
+.hamburger-menu span:nth-child(4) {
+  top: 20px;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.hamburger-menu.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+/* Section-specific animations */
+.skill-item {
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill-item:hover {
+  color: var(--color-coral);
+  transform: translateX(10px);
+}
+
+.skill-item:hover:before {
+  color: var(--color-coral);
+  transform: translateX(5px);
+}
+
+/* Project card hover animations */
+.project-card {
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.5s ease;
+  will-change: transform;
+}
+
+.project-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.project-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 70%,
+    rgba(0, 169, 165, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+  border-radius: var(--radius-lg);
+}
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
+/* Contact form animations */
+.contact-input,
+.contact-textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: var(--color-coral);
+  box-shadow: 0 0 0 3px rgba(255, 107, 94, 0.2);
+  outline: none;
+}
+
+/* Footer link animations */
+.footer-link a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-link a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-coral);
+  transition: width 0.3s ease;
+}
+
+.footer-link a:hover::after {
+  width: 100%;
+}
+
+/* Mobile Menu Animations */
+@media (max-width: 768px) {
+  .nav-list li {
+    transform: translateX(20px);
+    opacity: 0;
+    transition: 
+      transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      opacity 0.3s ease;
+  }
+
+  .nav-list.active li {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .nav-list.active li:nth-child(1) { transition-delay: 0.1s; }
+  .nav-list.active li:nth-child(2) { transition-delay: 0.2s; }
+  .nav-list.active li:nth-child(3) { transition-delay: 0.3s; }
+  .nav-list.active li:nth-child(4) { transition-delay: 0.4s; }
+  .nav-list.active li:nth-child(5) { transition-delay: 0.5s; }
+  .nav-list.active li:nth-child(6) { transition-delay: 0.6s; }
+}

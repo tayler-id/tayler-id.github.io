@@ -1,0 +1,48 @@
+Conversation with Anthropic
+Started on March 16, 2025 at 04:39 PM America/Los_Angeles time PDT (GMT-0700)
+
+--- March 16, 2025 ---
+
+04:39 PM | Tayler Ramsay: Hello I know this is just a bot and you will send me to the same thing the research grant and i already applied. 
+ Look I am not a wealthy person i have a family with three kids and my beautiful wife. 
+ I am not monetizing the things of build but I would share with your team. But the cost have become over bearering. In the last two months I only have raked up over $1,700.00 
+​
+
+04:39 PM | Fin: We understand your financial concerns. Unfortunately, we don't offer general financial assistance programs for API usage. However, there are a few options you could consider: 
+ 1. If you're a researcher, you might be eligible for our External Researcher Access Program. You can apply through our application form for potential free API credits. 
+2. For startups in specific circumstances, we have limited programs handled by our sales team. You can reach out through our Contact Sales form to explore potential opportunities. 
+3. As you continue using our API, your usage limits may automatically increase over time, potentially offering better value. 
+ For more tailored solutions, consider contacting our sales team through the Contact Sales form on our website to discuss your specific situation and explore any available options. 
+ 
+Source:
+What is the External Researcher Access Program? (https://support.anthropic.com/en/articles/9125743-what-is-the-external-researcher-access-program)
+
+04:40 PM | Fin: Is that what you were looking for?
+
+04:43 PM | Tayler Ramsay: Wait for the team 👤
+
+04:44 PM | Fin: Certainly! While we connect you with someone, could you share any additional details about your concern? This will help us assist you more effectively.
+
+04:44 PM | Fin: To pass this over to our team, please reply and let us know any additional information you'd like to share about your issue.
+
+04:53 PM | Tayler Ramsay: sorry
+
+04:53 PM | Fin: Thanks! We're transitioning your question to one of our human support agents for further assistance. You don't need to keep this window open - we'll email you when an agent has responded. Our typical wait time is about 2 business days.
+
+04:56 PM | Tayler Ramsay: My name is Tayler Ramsay, and I have been engaged in AI development research for the past two years. Recently, I have been leveraging Claude to build innovative startups, including a mental health pattern detection application that I believe stands apart in its ability to offer accessible support to those in need. 
+ My passion for this work is deeply personal. Over the past year, both my wife and daughter have battled severe mental depression, with each requiring over six months of hospitalization. These experiences have not only intensified my commitment to mental health care but have also brought significant financial challenges, as the costs associated with this work have now exceeded $1700. Balancing the demands of supporting my family and advancing this project has become increasingly difficult. 
+ I am reaching out to explore whether there might be any opportunities for support or collaboration with Anthropic that could help sustain my efforts in this vital area. I am more than willing to share my work and collaborate on advancing solutions that empower individuals unable to access traditional mental health care. 
+ Thank you for taking the time to consider my request. I look forward to any guidance or support you may be able to offer. 
+ Sincerely, 
+ Tayler Ramsay
+
+04:58 PM | Tayler Ramsay: Most of that $1700 was over February and March. I hope this does not come off as someone looking for pity. I am not I am just very passionate about this.
+
+--- March 16, 2025 ---
+
+05:02 PM | Tayler Ramsay: !
+
+05:22 PM | Tayler Ramsay: hello
+
+---
+Exported from Anthropic on March 16, 2025 at 06:53 PM America/Los_Angeles time PDT (GMT-0700)

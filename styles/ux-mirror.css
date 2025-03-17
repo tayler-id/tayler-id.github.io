@@ -1,0 +1,473 @@
+/**
+ * UX Mirror Styles
+ * 
+ * This stylesheet provides styling for the UX Mirror UI components,
+ * including the panel, visualizations, and controls.
+ */
+
+/* Reset and Variables */
+:root {
+  /* Colors */
+  --uxm-primary: #3498db;
+  --uxm-secondary: #2ecc71;
+  --uxm-success: #27ae60;
+  --uxm-warning: #e67e22;
+  --uxm-danger: #e74c3c;
+  --uxm-info: #2980b9;
+  
+  /* Text colors */
+  --uxm-text-light: #ffffff;
+  --uxm-text-dark: #333333;
+  --uxm-text-muted: #7f8c8d;
+  
+  /* Background colors */
+  --uxm-bg-light: #f8f9fa;
+  --uxm-bg-dark: #2c3e50;
+  --uxm-bg-panel: rgba(255, 255, 255, 0.97);
+  --uxm-bg-card: #ffffff;
+  
+  /* Borders */
+  --uxm-border: #dcdfe6;
+  --uxm-border-radius: 6px;
+  --uxm-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  
+  /* Spacing */
+  --uxm-spacing-xs: 4px;
+  --uxm-spacing-sm: 8px;
+  --uxm-spacing-md: 16px;
+  --uxm-spacing-lg: 24px;
+  
+  /* Font sizes */
+  --uxm-font-xs: 0.75rem;
+  --uxm-font-sm: 0.875rem;
+  --uxm-font-md: 1rem;
+  --uxm-font-lg: 1.25rem;
+  
+  /* Panels */
+  --uxm-panel-width: 320px;
+  --uxm-panel-height: 400px;
+  --uxm-header-height: 40px;
+  --uxm-tabs-height: 40px;
+  --uxm-toggle-size: 48px;
+  
+  /* Transitions */
+  --uxm-transition-speed: 0.3s;
+}
+
+/* Base Styles */
+.ux-mirror-container * {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.ux-mirror-container {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* Panel Positioning */
+.ux-mirror-container.top-left {
+  top: var(--uxm-spacing-md);
+  left: var(--uxm-spacing-md);
+}
+
+.ux-mirror-container.top-right {
+  top: var(--uxm-spacing-md);
+  right: var(--uxm-spacing-md);
+}
+
+.ux-mirror-container.bottom-left {
+  bottom: var(--uxm-spacing-md);
+  left: var(--uxm-spacing-md);
+}
+
+.ux-mirror-container.bottom-right {
+  bottom: var(--uxm-spacing-md);
+  right: var(--uxm-spacing-md);
+}
+
+/* Panel */
+.ux-mirror-panel {
+  width: var(--uxm-panel-width);
+  height: var(--uxm-panel-height);
+  background-color: var(--uxm-bg-panel);
+  border-radius: var(--uxm-border-radius);
+  box-shadow: var(--uxm-shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform var(--uxm-transition-speed), opacity var(--uxm-transition-speed);
+  pointer-events: auto;
+}
+
+.ux-mirror-panel.hidden {
+  transform: translateY(20px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ux-mirror-panel.collapsed {
+  height: var(--uxm-header-height);
+}
+
+/* Panel Header */
+.ux-mirror-header {
+  height: var(--uxm-header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--uxm-spacing-md);
+  background-color: var(--uxm-primary);
+  color: var(--uxm-text-light);
+  border-radius: var(--uxm-border-radius) var(--uxm-border-radius) 0 0;
+}
+
+.ux-mirror-title {
+  font-size: var(--uxm-font-md);
+  font-weight: 600;
+  margin: 0;
+}
+
+.ux-mirror-header-actions {
+  display: flex;
+  gap: var(--uxm-spacing-sm);
+}
+
+.ux-mirror-btn {
+  background: transparent;
+  border: none;
+  color: var(--uxm-text-light);
+  cursor: pointer;
+  font-size: var(--uxm-font-md);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color var(--uxm-transition-speed);
+}
+
+.ux-mirror-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Tabs */
+.ux-mirror-tabs {
+  height: var(--uxm-tabs-height);
+  display: flex;
+  background-color: var(--uxm-bg-light);
+  border-bottom: 1px solid var(--uxm-border);
+}
+
+.ux-mirror-tab {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  padding: var(--uxm-spacing-sm) var(--uxm-spacing-md);
+  font-size: var(--uxm-font-sm);
+  color: var(--uxm-text-muted);
+  cursor: pointer;
+  transition: color var(--uxm-transition-speed), background-color var(--uxm-transition-speed);
+}
+
+.ux-mirror-tab.active {
+  color: var(--uxm-primary);
+  font-weight: 600;
+  background-color: var(--uxm-bg-card);
+  border-bottom: 2px solid var(--uxm-primary);
+}
+
+.ux-mirror-tab:hover:not(.active) {
+  color: var(--uxm-text-dark);
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Tab Panels */
+.ux-mirror-tab-panels {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+}
+
+.ux-mirror-tab-panel {
+  display: none;
+  padding: var(--uxm-spacing-md);
+  height: 100%;
+  overflow: auto;
+}
+
+.ux-mirror-tab-panel.active {
+  display: block;
+}
+
+/* Cards */
+.ux-mirror-card {
+  background-color: var(--uxm-bg-card);
+  border-radius: var(--uxm-border-radius);
+  border: 1px solid var(--uxm-border);
+  padding: var(--uxm-spacing-md);
+  margin-bottom: var(--uxm-spacing-md);
+}
+
+.ux-mirror-card:last-child {
+  margin-bottom: 0;
+}
+
+.ux-mirror-card h4 {
+  margin: 0 0 var(--uxm-spacing-sm) 0;
+  font-size: var(--uxm-font-md);
+  color: var(--uxm-text-dark);
+}
+
+/* Recommendation Cards */
+.ux-mirror-recommendation {
+  border-left: 3px solid var(--uxm-info);
+}
+
+.ux-mirror-recommendation.info {
+  border-left-color: var(--uxm-info);
+}
+
+.ux-mirror-recommendation.warning {
+  border-left-color: var(--uxm-warning);
+}
+
+.ux-mirror-recommendation.important {
+  border-left-color: var(--uxm-danger);
+}
+
+.ux-mirror-recommendation-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ux-mirror-recommendation-confidence {
+  font-size: var(--uxm-font-xs);
+  color: var(--uxm-text-muted);
+}
+
+.ux-mirror-recommendation-description {
+  margin: var(--uxm-spacing-sm) 0 0 0;
+  font-size: var(--uxm-font-sm);
+  color: var(--uxm-text-dark);
+}
+
+/* Visualization Areas */
+.ux-mirror-visualization {
+  width: 100%;
+  height: 160px;
+  background-color: var(--uxm-bg-light);
+  border-radius: var(--uxm-border-radius);
+  margin-top: var(--uxm-spacing-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Toggle Button */
+.ux-mirror-toggle-btn {
+  position: fixed;
+  width: var(--uxm-toggle-size);
+  height: var(--uxm-toggle-size);
+  border-radius: 50%;
+  background-color: var(--uxm-primary);
+  color: var(--uxm-text-light);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--uxm-shadow);
+  z-index: 9998;
+  transition: background-color var(--uxm-transition-speed);
+  pointer-events: auto;
+}
+
+.ux-mirror-toggle-btn:hover {
+  background-color: var(--uxm-info);
+}
+
+.ux-mirror-toggle-btn.hidden {
+  transform: scale(0);
+  opacity: 0;
+}
+
+/* Toggle Button Positioning */
+.ux-mirror-container.top-left .ux-mirror-toggle-btn {
+  top: var(--uxm-spacing-md);
+  left: var(--uxm-spacing-md);
+}
+
+.ux-mirror-container.top-right .ux-mirror-toggle-btn {
+  top: var(--uxm-spacing-md);
+  right: var(--uxm-spacing-md);
+}
+
+.ux-mirror-container.bottom-left .ux-mirror-toggle-btn {
+  bottom: var(--uxm-spacing-md);
+  left: var(--uxm-spacing-md);
+}
+
+.ux-mirror-container.bottom-right .ux-mirror-toggle-btn {
+  bottom: var(--uxm-spacing-md);
+  right: var(--uxm-spacing-md);
+}
+
+/* Stats & Metrics */
+.ux-mirror-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--uxm-spacing-sm);
+  margin-top: var(--uxm-spacing-sm);
+}
+
+.ux-mirror-metric {
+  background-color: var(--uxm-bg-light);
+  border-radius: var(--uxm-border-radius);
+  padding: var(--uxm-spacing-sm);
+  text-align: center;
+}
+
+.ux-mirror-metric-value {
+  font-size: var(--uxm-font-lg);
+  font-weight: 600;
+  color: var(--uxm-primary);
+  margin: 0;
+}
+
+.ux-mirror-metric-label {
+  font-size: var(--uxm-font-xs);
+  color: var(--uxm-text-muted);
+  margin: 0;
+}
+
+/* Progress Bars */
+.ux-mirror-progress {
+  height: 8px;
+  background-color: var(--uxm-bg-light);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: var(--uxm-spacing-sm);
+}
+
+.ux-mirror-progress-bar {
+  height: 100%;
+  background-color: var(--uxm-primary);
+  border-radius: 4px;
+  transition: width var(--uxm-transition-speed);
+}
+
+/* Adaptations Controls */
+.ux-mirror-adaptations-controls {
+  margin-top: var(--uxm-spacing-md);
+}
+
+.ux-mirror-control-group {
+  margin-bottom: var(--uxm-spacing-md);
+}
+
+.ux-mirror-control-label {
+  display: block;
+  font-size: var(--uxm-font-sm);
+  font-weight: 600;
+  margin-bottom: var(--uxm-spacing-xs);
+}
+
+.ux-mirror-control {
+  width: 100%;
+  padding: var(--uxm-spacing-sm);
+  border: 1px solid var(--uxm-border);
+  border-radius: var(--uxm-border-radius);
+  font-size: var(--uxm-font-sm);
+}
+
+.ux-mirror-control-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--uxm-spacing-sm);
+  cursor: pointer;
+}
+
+.ux-mirror-toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.ux-mirror-toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ux-mirror-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--uxm-text-muted);
+  border-radius: 20px;
+  transition: var(--uxm-transition-speed);
+}
+
+.ux-mirror-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: var(--uxm-transition-speed);
+}
+
+.ux-mirror-toggle-switch input:checked + .ux-mirror-toggle-slider {
+  background-color: var(--uxm-primary);
+}
+
+.ux-mirror-toggle-switch input:checked + .ux-mirror-toggle-slider:before {
+  transform: translateX(20px);
+}
+
+/* Heatmap Visualization */
+.ux-mirror-heatmap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.ux-mirror-heatmap-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(231, 76, 60, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+  :root {
+    --uxm-panel-width: 280px;
+    --uxm-panel-height: 360px;
+  }
+  
+  .ux-mirror-container.bottom-right,
+  .ux-mirror-container.bottom-left,
+  .ux-mirror-container.top-right,
+  .ux-mirror-container.top-left {
+    bottom: var(--uxm-spacing-sm);
+    right: var(--uxm-spacing-sm);
+    left: auto;
+    top: auto;
+  }
+}

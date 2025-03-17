@@ -1,0 +1,18 @@
+/* 
+ * Main Animations stylesheet for Portfolio
+ * This file imports all animation modules
+ */
+
+/* Import all animation modules */
+@import url('base-animations.css');
+@import url('advanced-animations.css');
+@import url('element-animations.css');
+
+/* 
+ * This structure keeps our animation code modular and organized,
+ * while maintaining files under 200 lines each:
+ * 
+ * base-animations.css: Core keyframes and basic animation classes
+ * advanced-animations.css: More complex animation effects and specialized animations
+ * element-animations.css: Animations for specific website elements
+ */
