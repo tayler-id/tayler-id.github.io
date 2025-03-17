@@ -1,10 +1,578 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <title>My GitHub Page</title>
-  </head>
-  <body>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>This is a sample page hosted with GitHub Pages.</p>
-  </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayler.id - Senior UX Designer & Frontend Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/design-system.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- UX Mirror Styles (for the demo section) -->
+    <link rel="stylesheet" href="styles/ux-mirror.css">
+</head>
+<body>
+    <!-- Custom cursor (will be controlled by JS) -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+    
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo logo-animation">
+                    <img src="assets/images/taylers_logo.jpg" alt="Tayler.id Logo">
+                    <span>tayler.id</span>
+                </a>
+                
+                <div class="hamburger-menu mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <div class="mobile-menu-overlay"></div>
+                
+                <nav>
+                    <ul class="nav-list stagger-list">
+                        <li style="--i: 1"><a href="#about" class="nav-link">About</a></li>
+                        <li style="--i: 2"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li style="--i: 3"><a href="#projects" class="nav-link">Projects</a></li>
+                        <li style="--i: 4"><a href="#case-studies" class="nav-link">Case Studies</a></li>
+                        <li style="--i: 5"><a href="#ux-mirror" class="nav-link">UX Mirror</a></li>
+                        <li style="--i: 6"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">
+                    Designing <span class="text-coral animate-text-glow">Experiences</span> that <span class="text-teal">Matter</span>
+                </h1>
+                <p class="hero-subtitle animate-slide-up" style="animation-delay: 0.3s">
+                    Senior UX Designer & Frontend Developer specialized in creating human-centered digital experiences
+                    that combine aesthetics with functionality.
+                </p>
+                <div class="hero-cta animate-slide-up" style="animation-delay: 0.5s">
+                    <a href="#projects" class="btn btn-primary btn-animation-border">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/images/Profile_pic.jpg" alt="Professional headshot">
+                </div>
+                <div class="about-content">
+                    <h3>Hi, I'm Tayler</h3>
+                    <p>
+                        I'm a Senior UX Designer and Frontend Developer with over 8 years of experience creating 
+                        intuitive, accessible, and engaging digital experiences. My approach combines user-centered 
+                        design principles with clean, efficient code to build products that people love to use.
+                    </p>
+                    <p>
+                        I specialize in designing and developing complex applications, with a particular focus on 
+                        AI-driven interfaces, design systems, and health applications. My passion lies in creating
+                        digital experiences that are not just functional, but delightful.
+                    </p>
+                    <p>
+                        When I'm not designing or coding, you can find me exploring new technologies, contributing
+                        to open-source projects, or speaking at industry conferences about UX and frontend development
+                        best practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+<section class="section reveal-section" id="skills">
+        <div class="container">
+            <h2 class="animate-fade-in">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3 class="skill-category-title animate-text-glow">UX Design</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">User Research & Testing</li>
+                        <li class="skill-item">Information Architecture</li>
+                        <li class="skill-item">Interaction Design</li>
+                        <li class="skill-item">Prototyping</li>
+                        <li class="skill-item">Usability Analysis</li>
+                        <li class="skill-item">Accessibility (WCAG)</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category fade-in">
+                    <h3 class="skill-category-title animate-text-glow">Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">HTML5 / CSS3 / JavaScript</li>
+                        <li class="skill-item">Responsive Web Design</li>
+                        <li class="skill-item">CSS Grid & Flexbox</li>
+                        <li class="skill-item">Progressive Web Apps</li>
+                        <li class="skill-item">Web Animations API</li>
+                        <li class="skill-item">Performance Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category fade-in">
+                    <h3 class="skill-category-title animate-text-glow">AI Integration</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">AI-Driven UI/UX</li>
+                        <li class="skill-item">Conversational Interfaces</li>
+                        <li class="skill-item">Recommendation Systems</li>
+                        <li class="skill-item">User Behavior Analysis</li>
+                        <li class="skill-item">Adaptive Interfaces</li>
+                        <li class="skill-item">Personalization Engines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Projects Section -->
+<section class="section reveal-section" id="projects">
+        <div class="container">
+            <h2 class="animate-fade-in">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/images/project-placeholder.jpg" alt="AI-Driven Health App">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Healthcare</div>
+                        <h3 class="project-title">AI-Driven Health App</h3>
+                        <p class="project-description">
+                            A mental health application that uses AI to personalize the user experience and provide
+                            targeted interventions based on user behavior and preferences.
+                        </p>
+                        <a href="#case-study-health" class="btn btn-outline">View Case Study</a>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/images/project-placeholder.jpg" alt="Enterprise Design System">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Design System</div>
+                        <h3 class="project-title">Enterprise Design System</h3>
+                        <p class="project-description">
+                            A comprehensive design system for a Fortune 500 company, ensuring consistency across all
+                            digital products while maintaining accessibility and usability.
+                        </p>
+                        <a href="#case-study-design-system" class="btn btn-outline">View Case Study</a>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/images/project-placeholder.jpg" alt="UX Mirror Analytics">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Analytics Tool</div>
+                        <h3 class="project-title">UX Mirror Analytics</h3>
+                        <p class="project-description">
+                            A powerful user experience analytics and adaptation system that helps improve website
+                            usability through real-time insights and adaptations.
+                        </p>
+                        <a href="#ux-mirror" class="btn btn-outline">View Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Case Studies Section -->
+<section class="section reveal-section" id="case-studies">
+        <div class="container">
+            <h2 class="animate-fade-in">Case Studies</h2>
+            
+            <div class="case-study reveal-right" id="case-study-health">
+                <div class="case-study-header">
+                    <h3 class="case-study-title">AI-Driven Mental Health Application</h3>
+                    <div class="case-study-meta">
+                        <div class="case-study-meta-item">
+                            <span class="case-study-meta-label">Role</span>
+                            <span class="case-study-meta-value">Lead UX Designer & Developer</span>
+                        </div>
+                        <div class="case-study-meta-item">
+                            <span class="case-study-meta-label">Duration</span>
+                            <span class="case-study-meta-value">8 months</span>
+                        </div>
+                        <div class="case-study-meta-item">
+                            <span class="case-study-meta-label">Team</span>
+                            <span class="case-study-meta-value">5 members</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <img src="assets/images/project-placeholder.jpg" alt="Mental Health App Overview" class="case-study-image">
+                
+                <div class="case-study-content">
+                    <h3>The Challenge</h3>
+                    <p>
+                        Create a mental health application that delivers personalized support through AI-driven
+                        insights while maintaining a human-centered approach. The application needed to adapt to
+                        user behavior patterns and emotional states to provide relevant interventions.
+                    </p>
+                    
+                    <h3>Research & Discovery</h3>
+                    <p>
+                        Through extensive user research including interviews with mental health professionals and
+                        potential users, we identified key pain points in existing mental health applications:
+                        
+                        <ul>
+                            <li>Generic content that didn't address individual needs</li>
+                            <li>Poor engagement leading to high abandonment rates</li>
+                            <li>Lack of evidence-based interventions</li>
+                            <li>Privacy and trust concerns</li>
+                        </ul>
+                    </p>
+                    
+                    <h3>Solution & Impact</h3>
+                    <p>
+                        I designed an adaptive interface that uses AI to analyze user inputs, behavior patterns, and
+                        contextual information to provide personalized support. Key features included:
+                        
+                        <ul>
+                            <li>AI-powered mood tracking with pattern recognition</li>
+                            <li>Personalized intervention recommendations</li>
+                            <li>Adaptive content that responds to user progress</li>
+                            <li>Privacy-first architecture with transparent data usage</li>
+                        </ul>
+                        
+                        The application achieved a 78% retention rate after 30 days, significantly above industry average,
+                        and demonstrated measurable improvements in user-reported mental wellbeing scores.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="case-study reveal-left" id="case-study-design-system">
+                <div class="case-study-header">
+                    <h3 class="case-study-title">Enterprise Design System</h3>
+                    <div class="case-study-meta">
+                        <div class="case-study-meta-item">
+                            <span class="case-study-meta-label">Role</span>
+                            <span class="case-study-meta-value">Design System Architect</span>
+                        </div>
+                        <div class="case-study-meta-item">
+                            <span class="case-study-meta-label">Duration</span>
+                            <span class="case-study-meta-value">12 months</span>
+                        </div>
+                        <div class="case-study-meta-item">
+                            <span class="case-study-meta-label">Team</span>
+                            <span class="case-study-meta-value">8 members</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <img src="assets/images/project-placeholder.jpg" alt="Design System Overview" class="case-study-image">
+                
+                <div class="case-study-content">
+                    <h3>The Challenge</h3>
+                    <p>
+                        A Fortune 500 company with over 50 digital products was struggling with inconsistent user
+                        experiences, redundant development efforts, and accessibility compliance issues. They needed
+                        a unified design system that could scale across their enterprise while maintaining quality.
+                    </p>
+                    
+                    <h3>Approach & Implementation</h3>
+                    <p>
+                        I led the development of a comprehensive design system that included:
+                        
+                        <ul>
+                            <li>Component library with 120+ reusable UI elements</li>
+                            <li>Design tokens for consistent styling</li>
+                            <li>Interaction patterns documentation</li>
+                            <li>Accessibility guidelines and automated testing</li>
+                            <li>Version control and migration paths</li>
+                        </ul>
+                    </p>
+                    
+                    <h3>Results & Impact</h3>
+                    <p>
+                        The design system implementation resulted in:
+                        
+                        <ul>
+                            <li>65% reduction in time-to-market for new features</li>
+                            <li>42% decrease in UI development costs</li>
+                            <li>100% WCAG 2.1 AA compliance across all products</li>
+                            <li>Consistent brand experience across all digital touchpoints</li>
+                            <li>Improved designer-developer collaboration</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- UX Mirror Demo Section -->
+    <section class="section" id="ux-mirror">
+        <div class="container">
+            <h2>UX Mirror: Featured Project</h2>
+            <p>
+                UX Mirror is a powerful user experience analytics and adaptation system that helps improve
+                website usability by tracking user interactions, analyzing behavior patterns, and providing
+                real-time insights and adaptations.
+            </p>
+            
+            <div class="ux-mirror-demo">
+                <div class="demo-features">
+                    <div class="feature-card fade-in">
+                        <h3>Interaction Tracking</h3>
+                        <p>Capture mouse movements, clicks, scrolling behavior, viewport changes, and time-based metrics.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <h3>User Profiling</h3>
+                        <p>Build user behavior profiles based on interaction patterns and preferences.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <h3>Behavioral Insights</h3>
+                        <p>Generate actionable insights about user engagement and preferences.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <h3>Adaptive UI</h3>
+                        <p>Automatically adapt colors, animations, and content based on user behavior.</p>
+                    </div>
+                </div>
+                
+                <div class="demo-area">
+                    <h3>Interactive Demo</h3>
+                    <p>
+                        Try scrolling, clicking, and interacting with the elements below. UX Mirror will track these interactions
+                        and generate insights about your behavior. After several interactions, the UX Mirror panel will appear.
+                    </p>
+                    <button class="btn btn-primary" id="show-panel-btn">Show UX Mirror Panel</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>
+                        I'm currently available for freelance work and full-time opportunities. If you're interested
+                        in working together or just want to say hello, feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-item-icon"></i>
+                        <span>hello@tayler.id</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-item-icon"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-item-icon"></i>
+                        <span>New York, NY</span>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="contact-form-group">
+                        <label for="name" class="contact-label">Name</label>
+                        <input type="text" id="name" name="name" class="contact-input" required>
+                    </div>
+                    
+                    <div class="contact-form-group">
+                        <label for="email" class="contact-label">Email</label>
+                        <input type="email" id="email" name="email" class="contact-input" required>
+                    </div>
+                    
+                    <div class="contact-form-group">
+                        <label for="subject" class="contact-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="contact-input" required>
+                    </div>
+                    
+                    <div class="contact-form-group">
+                        <label for="message" class="contact-label">Message</label>
+                        <textarea id="message" name="message" class="contact-textarea" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">tayler.id</div>
+                    <p class="footer-description">
+                        Senior UX Designer & Frontend Developer specialized in creating human-centered digital
+                        experiences that combine aesthetics with functionality.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#home">Home</a></li>
+                        <li class="footer-link"><a href="#about">About</a></li>
+                        <li class="footer-link"><a href="#skills">Skills</a></li>
+                        <li class="footer-link"><a href="#projects">Projects</a></li>
+                        <li class="footer-link"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">Projects</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#case-study-health">Health App</a></li>
+                        <li class="footer-link"><a href="#case-study-design-system">Design System</a></li>
+                        <li class="footer-link"><a href="#ux-mirror">UX Mirror</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                &copy; 2025 Tayler.id. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/project-interactions.js"></script>
+    <script src="scripts/ux-mirror-loader.js"></script>
+    
+    <script>
+        // Initialize UX Mirror for the demo section
+        window.addEventListener('load', () => {
+            if (window.UXMirrorLoader) {
+                window.UXMirrorLoader.config.autoLoad = false;
+                window.UXMirrorLoader.config.debug = true;
+                window.UXMirrorLoader.init();
+            }
+            
+            // Show panel button
+            const showPanelBtn = document.getElementById('show-panel-btn');
+            if (showPanelBtn) {
+                showPanelBtn.addEventListener('click', () => {
+                    if (window.UXMirror && window.UXMirror.ui) {
+                        window.UXMirror.ui.toggleVisibility(true);
+                    }
+                });
+            }
+            
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navList = document.querySelector('.nav-list');
+            
+            if (mobileMenuBtn && navList) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navList.classList.toggle('active');
+                });
+            }
+            
+            // Close mobile menu when clicking a link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navList.classList.remove('active');
+                });
+            });
+            
+            // Handle scroll animations
+            const animateElements = () => {
+                const elements = document.querySelectorAll('.fade-in, .reveal-right, .reveal-left');
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementPosition < windowHeight * 0.9) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+            
+            // Initial check for elements in view
+            animateElements();
+            
+            // Check on scroll
+            window.addEventListener('scroll', animateElements);
+            
+            // Custom cursor
+            const cursor = document.querySelector('.custom-cursor');
+            const cursorDot = document.querySelector('.custom-cursor-dot');
+            
+            if (cursor && cursorDot) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                    
+                    cursorDot.style.left = e.clientX + 'px';
+                    cursorDot.style.top = e.clientY + 'px';
+                });
+                
+                // Add hover effect to links and buttons
+                const interactiveElements = document.querySelectorAll('a, button');
+                interactiveElements.forEach(el => {
+                    el.addEventListener('mouseenter', () => {
+                        cursor.style.width = '60px';
+                        cursor.style.height = '60px';
+                        cursor.style.borderColor = 'var(--color-teal)';
+                    });
+                    
+                    el.addEventListener('mouseleave', () => {
+                        cursor.style.width = '40px';
+                        cursor.style.height = '40px';
+                        cursor.style.borderColor = 'var(--color-coral)';
+                    });
+                });
+            }
+            
+            // Handle header scroll effect
+            const header = document.querySelector('.header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
