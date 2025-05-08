@@ -1,0 +1,126 @@
+{
+  "version": "1.0",
+  "model": "sentence-transformers/all-mpnet-base-v2",
+  "keys": {
+    "1B1": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ai-chat.js",
+      "mtime": 1746723580.0130644
+    },
+    "1B2": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/animations.js",
+      "mtime": 1746723580.013155
+    },
+    "1B3": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/main.js",
+      "mtime": 1746723580.0132473
+    },
+    "1B4": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/project-interactions.js",
+      "mtime": 1746723580.0133262
+    },
+    "1Ba1": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/README-integration.md",
+      "mtime": 1746723580.0135148
+    },
+    "1Ba2": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/README.md",
+      "mtime": 1746723580.013599
+    },
+    "2A1": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/adaptations/README.md",
+      "mtime": 1746723580.0137627
+    },
+    "2A2": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/adaptations/animation.js",
+      "mtime": 1746723580.0138543
+    },
+    "2A3": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/adaptations/color.js",
+      "mtime": 1746723580.0139437
+    },
+    "2A4": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/adaptations/content.js",
+      "mtime": 1746723580.0140364
+    },
+    "2A5": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/adaptations/index.js",
+      "mtime": 1746723580.0141551
+    },
+    "2B1": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/analysis/README.md",
+      "mtime": 1746723580.0143127
+    },
+    "2B2": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/analysis/index.js",
+      "mtime": 1746723580.014418
+    },
+    "2B3": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/analysis/insights.js",
+      "mtime": 1746723580.0145235
+    },
+    "2B4": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/analysis/profile.js",
+      "mtime": 1746723580.0146065
+    },
+    "1Ba3": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/config.js",
+      "mtime": 1746723580.0147364
+    },
+    "1Ba4": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/index.js",
+      "mtime": 1746723580.0148516
+    },
+    "2C1": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/trackers/README.md",
+      "mtime": 1746723580.0150123
+    },
+    "2C2": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/trackers/click.js",
+      "mtime": 1746723580.0151286
+    },
+    "2C3": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/trackers/index.js",
+      "mtime": 1746723580.0151992
+    },
+    "2C4": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/trackers/mouse.js",
+      "mtime": 1746723580.0153306
+    },
+    "2C5": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/trackers/scroll.js",
+      "mtime": 1746723580.015447
+    },
+    "2C6": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/trackers/time.js",
+      "mtime": 1746723580.0155773
+    },
+    "2C7": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/trackers/viewport.js",
+      "mtime": 1746723580.0156693
+    },
+    "2D1": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/ui/README.md",
+      "mtime": 1746723580.0158298
+    },
+    "2D2": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/ui/index.js",
+      "mtime": 1746723580.0159464
+    },
+    "2D3": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/ui/panel.js",
+      "mtime": 1746723580.0160298
+    },
+    "2D4": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/ui/recommendations.js",
+      "mtime": 1746723580.0162063
+    },
+    "2D5": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/ui/visualizations.js",
+      "mtime": 1746723580.0163138
+    },
+    "1B5": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror-loader.js",
+      "mtime": 1746723580.013402
+    }
+  }
+}

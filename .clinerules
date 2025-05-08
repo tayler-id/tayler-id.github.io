@@ -1,0 +1,16 @@
+[LAST_ACTION_STATE]
+last_action: "Completed initial project analysis and dependency tracking"
+current_phase: "Set-up/Maintenance"
+next_action: "Verify and update dependency trackers"
+next_phase: "Set-up/Maintenance"
+
+[CODE_ROOT_DIRECTORIES]
+- scripts
+- styles
+
+[DOC_DIRECTORIES]
+- html
+
+[LEARNING_JOURNAL]
+- Regularly updating memory_bank and any instruction files help me to remember what I have done and what still needs to be done so I don't lose track.
+-

@@ -1,0 +1,14 @@
+---KEY_DEFINITIONS_START---
+Key Definitions:
+1A: /Users/tramsay/Desktop/tayler-id.github.io/html
+1A1: /Users/tramsay/Desktop/tayler-id.github.io/html/index.html
+---KEY_DEFINITIONS_END---
+
+last_KEY_edit: Assigned keys: 1A, 1A1
+last_GRID_edit: Initial creation
+
+---GRID_START---
+X 1A 1A1
+1A = ox
+1A1 = xo
+---GRID_END---

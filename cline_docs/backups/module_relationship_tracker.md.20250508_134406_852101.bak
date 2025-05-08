@@ -1,0 +1,24 @@
+---KEY_DEFINITIONS_START---
+Key Definitions:
+1B: /Users/tramsay/Desktop/tayler-id.github.io/scripts
+1Ba: /Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror
+1C: /Users/tramsay/Desktop/tayler-id.github.io/styles
+2A: /Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/adaptations
+2B: /Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/analysis
+2C: /Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/trackers
+2D: /Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/ui
+---KEY_DEFINITIONS_END---
+
+last_KEY_edit: Assigned keys: 1B, 1Ba, 1C, 2A, 2B, 2C, 2D
+last_GRID_edit: Initial creation
+
+---GRID_START---
+X 1B 1Ba 1C 2A 2B 2C 2D
+1B = op6
+1Ba = pop5
+1C = ppop4
+2A = p3op3
+2B = p4opp
+2C = p5op
+2D = p6o
+---GRID_END---

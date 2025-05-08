@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "model": "sentence-transformers/all-mpnet-base-v2",
+  "keys": {
+    "1C1": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/styles/advanced-animations.css",
+      "mtime": 1746723580.016486
+    },
+    "1C2": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/styles/animations.css",
+      "mtime": 1746723580.0165665
+    },
+    "1C3": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/styles/base-animations.css",
+      "mtime": 1746723580.0166345
+    },
+    "1C4": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/styles/components.css",
+      "mtime": 1746723580.0167482
+    },
+    "1C5": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/styles/design-system.css",
+      "mtime": 1746723580.0168302
+    },
+    "1C6": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/styles/element-animations.css",
+      "mtime": 1746723580.0169053
+    },
+    "1C7": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/styles/layout.css",
+      "mtime": 1746723580.016993
+    },
+    "1C8": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/styles/main.css",
+      "mtime": 1746723580.0170927
+    },
+    "1C9": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/styles/ux-mirror.css",
+      "mtime": 1746723580.0171874
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "model": "sentence-transformers/all-mpnet-base-v2",
+  "keys": {
+    "1A1": {
+      "path": "/Users/tramsay/Desktop/tayler-id.github.io/html/index.html",
+      "mtime": 1746723580.0116982
+    }
+  }
+}

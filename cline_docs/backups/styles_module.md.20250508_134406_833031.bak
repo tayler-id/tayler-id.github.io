@@ -1,0 +1,77 @@
+# Module: styles
+
+## Purpose & Responsibility
+{1-2 paragraphs on module purpose & responsibility}
+
+## Interfaces
+* `{InterfaceName}`: {purpose}
+* `{Method1}`: {description}
+* `{Method2}`: {description}
+* Input: [Data received]
+* Output: [Data provided]
+...
+
+## Implementation Details
+* Files: [List with 1-line descriptions]
+* Important algorithms: [List with 1-line descriptions]
+* Data Models
+    * `{Model1}`: {description}
+    * `{Model2}`: {description}
+
+## Current Implementation Status
+* Completed: [List of completed items]
+* In Progress: [Current work]
+* Pending: [Future work]
+
+## Implementation Plans & Tasks
+* `implementation_plan_{filename1}.md`
+* [Task1]: {brief description}
+* [Task2]: {brief description}
+* `implementation_plan_{filename2}.md`
+* [Task1]: {brief description}
+* [Task2]: {brief description} 
+...
+
+## Mini Dependency Tracker
+---mini_tracker_start---
+
+---KEY_DEFINITIONS_START---
+Key Definitions:
+1A1: /Users/tramsay/Desktop/tayler-id.github.io/html/index.html
+1B2: /Users/tramsay/Desktop/tayler-id.github.io/scripts/animations.js
+1C: /Users/tramsay/Desktop/tayler-id.github.io/styles
+1C1: /Users/tramsay/Desktop/tayler-id.github.io/styles/advanced-animations.css
+1C2: /Users/tramsay/Desktop/tayler-id.github.io/styles/animations.css
+1C3: /Users/tramsay/Desktop/tayler-id.github.io/styles/base-animations.css
+1C4: /Users/tramsay/Desktop/tayler-id.github.io/styles/components.css
+1C5: /Users/tramsay/Desktop/tayler-id.github.io/styles/design-system.css
+1C6: /Users/tramsay/Desktop/tayler-id.github.io/styles/element-animations.css
+1C7: /Users/tramsay/Desktop/tayler-id.github.io/styles/layout.css
+1C8: /Users/tramsay/Desktop/tayler-id.github.io/styles/main.css
+1C9: /Users/tramsay/Desktop/tayler-id.github.io/styles/ux-mirror.css
+2A2: /Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/adaptations/animation.js
+2D2: /Users/tramsay/Desktop/tayler-id.github.io/scripts/ux-mirror/ui/index.js
+---KEY_DEFINITIONS_END---
+
+last_KEY_edit: Assigned keys: 1A1, 1B2, 1C, 1C1, 1C2, 1C3, 1C4, 1C5, 1C6, 1C7, 1C8, 1C9, 2A2, 2D2
+last_GRID_edit: Initial creation
+
+---GRID_START---
+X 1A1 1B2 1C 1C1 1C2 1C3 1C4 1C5 1C6 1C7 1C8 1C9 2A2 2D2
+1A1 = op13
+1B2 = pop12
+1C = ppop11
+1C1 = p3op10
+1C2 = p4op9
+1C3 = p5op8
+1C4 = p6op7
+1C5 = p7op6
+1C6 = p8op5
+1C7 = p9op4
+1C8 = p10op3
+1C9 = p11opp
+2A2 = p12op
+2D2 = p13o
+---GRID_END---
+
+---mini_tracker_end---

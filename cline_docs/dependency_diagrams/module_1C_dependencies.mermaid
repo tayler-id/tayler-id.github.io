@@ -1,0 +1,39 @@
+flowchart TB
+subgraph 1A ["1A<br>html"]
+      1A1["1A1<br>index.html"]
+end
+subgraph 1B ["1B<br>scripts"]
+      1B2["1B2<br>animations.js"]
+  subgraph 1Ba ["1Ba<br>ux-mirror"]
+    subgraph 2A ["2A<br>adaptations"]
+          2A2["2A2<br>animation.js"]
+    end
+    subgraph 2D ["2D<br>ui"]
+          2D2["2D2<br>index.js"]
+    end
+  end
+end
+subgraph 1C ["1C<br>styles"]
+      1C1["1C1<br>advanced-animations.css"]
+      1C2["1C2<br>animations.css"]
+      1C3["1C3<br>base-animations.css"]
+      1C4["1C4<br>components.css"]
+      1C5["1C5<br>design-system.css"]
+      1C6["1C6<br>element-animations.css"]
+      1C8["1C8<br>main.css"]
+      1C9["1C9<br>ux-mirror.css"]
+end
+
+  %% -- Dependencies --
+  1A1 -.->|"semantic (weak)"| 1C5
+  1A1 ==>|"semantic (strong)"| 1C8
+  1B2 ==>|"semantic (strong)"| 1C1
+  1B2 -.->|"semantic (weak)"| 1C2
+  1B2 -.->|"semantic (weak)"| 1C3
+  1B2 ==>|"semantic (strong)"| 1C6
+  1C1 -.->|"semantic (weak)"| 2A2
+  1C4 -.->|"semantic (weak)"| 1C6
+  1C4 ==>|"semantic (strong)"| 1C8
+  1C5 ==>|"semantic (strong)"| 1C8
+  1C6 ==>|"semantic (strong)"| 1C8
+  1C9 -.->|"semantic (weak)"| 2D2
