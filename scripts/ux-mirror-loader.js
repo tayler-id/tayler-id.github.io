@@ -107,12 +107,16 @@
       
       // Wait for UXMirror to be available
       const checkUXMirror = () => {
-        if (window.UXMirror) {
-          const uxMirror = new window.UXMirror();
-          window.UXMirror = uxMirror;
-          uxMirror.start();
-          this.log('UX Mirror initialized');
+        if (window.UXMirror && typeof window.UXMirror === 'function') {
+          const uxMirrorInstance = new window.UXMirror();
+          // It's generally better not to overwrite the global class with an instance.
+          // Consider window.uxMirrorInstance = uxMirrorInstance;
+          // For now, keeping original logic of overwriting:
+          window.UXMirror = uxMirrorInstance; 
+          uxMirrorInstance.start();
+          this.log('UX Mirror initialized by loader');
         } else {
+          this.log('UXMirror class not yet available on window, or not a function. Retrying...', 'warn');
           setTimeout(checkUXMirror, 100);
         }
       };

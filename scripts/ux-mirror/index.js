@@ -212,15 +212,15 @@ class UXMirror {
 }
 
 // Create global instance
-const uxMirror = new UXMirror();
+// const uxMirror = new UXMirror(); // Prevent self-instantiation when loaded as a module
 
 // Auto-initialize on load if not in a module context
 if (typeof window !== 'undefined') {
   window.addEventListener('load', () => {
-    // Only auto-initialize if not loaded as a module
-    if (window.UXMirror === undefined) {
-      window.UXMirror = uxMirror;
-      uxMirror.start();
+    // Assign the CLASS to window.UXMirror if it's not already defined.
+    // The loader will handle instantiation.
+    if (typeof window.UXMirror === 'undefined') {
+        window.UXMirror = UXMirror; // UXMirror here refers to the class definition
     }
   });
 }
