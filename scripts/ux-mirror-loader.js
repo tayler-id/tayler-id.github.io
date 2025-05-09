@@ -109,10 +109,10 @@
       const checkUXMirror = () => {
         if (window.UXMirror && typeof window.UXMirror === 'function') {
           const uxMirrorInstance = new window.UXMirror();
-          // It's generally better not to overwrite the global class with an instance.
-          // Consider window.uxMirrorInstance = uxMirrorInstance;
-          // For now, keeping original logic of overwriting:
-          window.UXMirror = uxMirrorInstance; 
+          // Assign the instance to a different global variable, or manage it internally.
+          // Avoid overwriting window.UXMirror if it's intended to remain the class definition.
+          window.uxMirrorGlobalInstance = uxMirrorInstance; // Changed variable name
+          // window.UXMirror = uxMirrorInstance; // Original problematic line commented out
           uxMirrorInstance.start();
           this.log('UX Mirror initialized by loader');
         } else {

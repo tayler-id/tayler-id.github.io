@@ -483,7 +483,7 @@
             if (window.UXMirrorLoader) {
                 // window.UXMirrorLoader.config.autoLoad = false; // Set to true (or remove line) to load modules
                 window.UXMirrorLoader.config.debug = true;
-                window.UXMirrorLoader.init(); // This will now call loadModules if autoLoad is true (default)
+                // window.UXMirrorLoader.init(); // UXMirrorLoader self-initializes. This call is redundant.
             }
             
             // Show panel button
