@@ -159,22 +159,23 @@
             <h2 class="animate-fade-in">Featured Projects</h2>
             
             <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="../assets/images/project-placeholder.jpg" alt="AI-Driven Health App">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-category">Healthcare</div>
-                        <h3 class="project-title">AI-Driven Health App</h3>
-                        <p class="project-description">
-                            A mental health application that uses AI to personalize the user experience and provide
-                            targeted interventions based on user behavior and preferences.
-                        </p>
-                        <a href="#case-study-health" class="btn btn-outline">View Case Study</a>
-                    </div>
+                <div class="project-card fade-in"> <!-- Updated TD Bank Card -->
+                    <a href="td-bank-case-study.html" class="project-card-link"> <!-- Link to the actual file -->
+                        <div class="project-image">
+                            <img src="../assets/images/project-placeholder.jpg" alt="TD Bank Project"> <!-- Update alt text -->
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Fintech / Enterprise</div> <!-- Update category -->
+                            <h3 class="project-title">TD Bank Credit Onboarding</h3> <!-- Update title -->
+                            <p class="project-description">
+                                Designed and co-developed a digital platform to streamline TD Bank's complex commercial credit application process, enhancing UX and integrating CFPB compliance.
+                            </p>
+                            <span class="btn btn-outline btn-small">View Case Study &rarr;</span> <!-- Changed link to span styled as button -->
+                        </div>
+                    </a>
                 </div>
                 
-                <div class="project-card fade-in">
+                <div class="project-card fade-in"> <!-- Placeholder 2 -->
                     <div class="project-image">
                         <img src="../assets/images/project-placeholder.jpg" alt="Enterprise Design System">
                     </div>
@@ -386,17 +387,17 @@
                     
                     <div class="contact-item">
                         <i class="fas fa-envelope contact-item-icon"></i>
-                        <span>hello@tayler.id</span>
+                        <a href="mailto:ramsay.tayler@gmail.com">ramsay.tayler@gmail.com</a>
                     </div>
                     
                     <div class="contact-item">
                         <i class="fas fa-phone contact-item-icon"></i>
-                        <span>+1 (555) 123-4567</span>
+                        <a href="tel:7175783243">717-578-3243</a>
                     </div>
                     
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt contact-item-icon"></i>
-                        <span>New York, NY</span>
+                        <span>York, PA</span>
                     </div>
                 </div>
                 
@@ -438,10 +439,9 @@
                         experiences that combine aesthetics with functionality.
                     </p>
                     <div class="footer-social">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+                        <a href="https://github.com/tayler-id?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tayler-ramsay/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <!-- Removed Twitter and Dribbble as links weren't provided -->
                     </div>
                 </div>
                 
@@ -467,7 +467,7 @@
             </div>
             
             <div class="footer-copyright">
-                &copy; 2025 Tayler.id. All rights reserved.
+                &copy; <span id="footer-year">2025</span> Tayler Ramsay. All rights reserved. <!-- Added span for JS update -->
             </div>
         </div>
     </footer>
@@ -481,9 +481,9 @@
         // Initialize UX Mirror for the demo section
         window.addEventListener('load', () => {
             if (window.UXMirrorLoader) {
-                window.UXMirrorLoader.config.autoLoad = false;
+                // window.UXMirrorLoader.config.autoLoad = false; // Set to true (or remove line) to load modules
                 window.UXMirrorLoader.config.debug = true;
-                window.UXMirrorLoader.init();
+                window.UXMirrorLoader.init(); // This will now call loadModules if autoLoad is true (default)
             }
             
             // Show panel button
@@ -495,24 +495,7 @@
                     }
                 });
             }
-            
-            // Mobile menu toggle
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            const navList = document.querySelector('.nav-list');
-            
-            if (mobileMenuBtn && navList) {
-                mobileMenuBtn.addEventListener('click', () => {
-                    navList.classList.toggle('active');
-                });
-            }
-            
-            // Close mobile menu when clicking a link
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    navList.classList.remove('active');
-                });
-            });
+            // Mobile menu toggle logic is now handled in animations.js
             
             // Handle scroll animations
             const animateElements = () => {
@@ -572,6 +555,12 @@
                     header.classList.remove('header-scrolled');
                 }
             });
+
+            // Update footer year dynamically
+            const footerYearSpan = document.getElementById('footer-year');
+            if (footerYearSpan) {
+                footerYearSpan.textContent = new Date().getFullYear();
+            }
         });
     </script>
 </body>

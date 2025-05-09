@@ -65,18 +65,19 @@ function initScrollAnimations() {
  * Initialize mobile menu functionality with overlay
  */
 function initMobileMenu() {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const navList = document.querySelector('.nav-list');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn'); // Use the button itself for the click
+    const hamburgerMenu = document.querySelector('.hamburger-menu'); // Target spans container for animation class
+    const navList = document.querySelector('.header .nav-list'); // Target nav list specifically within header
     const overlay = document.querySelector('.mobile-menu-overlay');
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.header .nav-link'); // Target links within header nav
     
-    if (hamburgerMenu && navList && overlay) {
-        // Toggle menu on hamburger click
-        hamburgerMenu.addEventListener('click', () => {
-            hamburgerMenu.classList.toggle('open');
-            navList.classList.toggle('active');
-            overlay.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
+    if (mobileMenuBtn && navList && overlay && hamburgerMenu) {
+        // Toggle menu on button click
+        mobileMenuBtn.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('open'); // Animate hamburger icon
+            navList.classList.toggle('active');    // Slide nav list in/out
+            overlay.classList.toggle('active');    // Show/hide overlay
+            document.body.classList.toggle('menu-open'); // Prevent body scroll
         });
         
         // Close menu when clicking overlay
@@ -90,10 +91,13 @@ function initMobileMenu() {
         // Close menu when clicking navigation links
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                hamburgerMenu.classList.remove('open');
-                navList.classList.remove('active');
-                overlay.classList.remove('active');
-                document.body.classList.remove('menu-open');
+                 // Only close if menu is actually active
+                if (navList.classList.contains('active')) {
+                    hamburgerMenu.classList.remove('open');
+                    navList.classList.remove('active');
+                    overlay.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
             });
         });
     }
@@ -115,12 +119,17 @@ function initCustomCursor() {
     document.addEventListener('mousemove', (e) => {
         const posX = e.clientX;
         const posY = e.clientY;
-        
-        cursor.style.left = `${posX}px`;
-        cursor.style.top = `${posY}px`;
-        
-        // Use transform for the dot for smoother animation
-        cursorDot.style.transform = `translate(${posX}px, ${posY}px)`;
+
+        // Use transform for positioning both elements for consistency and performance
+        // CSS handles the translate(-50%, -50%) centering
+        const transformString = `translate(${posX}px, ${posY}px)`; 
+
+        cursor.style.transform = transformString;
+        cursorDot.style.transform = transformString;
+
+        // Remove setting top/left directly on the outer cursor
+        // cursor.style.left = `${posX}px`; // Removed
+        // cursor.style.top = `${posY}px`; // Removed
     });
     
     // Interactive elements cursor effects

@@ -224,8 +224,9 @@ code {
   color: var(--color-coral);
 }
 
+/* Default state: Hide mobile button */
 .mobile-menu-btn {
-  display: none;
+  display: none; 
   border: none;
   background: none;
   color: var(--color-light-gray);
@@ -251,6 +252,18 @@ code {
   
   .nav-list.active {
     right: 0;
+  }
+  
+  /* Explicitly show nav-list on desktop */
+  .nav-list {
+      display: flex;
+      position: static; /* Override fixed positioning from mobile */
+      width: auto;
+      height: auto;
+      flex-direction: row; /* Ensure horizontal layout */
+      background-color: transparent;
+      padding: 0;
+      transition: none; /* Remove mobile transition */
   }
 }
 

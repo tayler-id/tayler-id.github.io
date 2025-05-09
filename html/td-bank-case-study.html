@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: TD Bank Commercial Credit Onboarding - Tayler Ramsay</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/design-system.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (Matches index.html structure) -->
+     <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo logo-animation"> <!-- Link back to index.html -->
+                    <img src="../assets/images/taylers_logo.jpg" alt="Tayler.id Logo">
+                    <span>tayler.id</span>
+                </a>
+                <div class="hamburger-menu mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="mobile-menu-overlay"></div>
+                <nav>
+                     <ul class="nav-list stagger-list">
+                        <li><a href="index.html#about" class="nav-link">About</a></li>
+                        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                        <li><a href="index.html#case-studies" class="nav-link">Case Studies</a></li>
+                        <li><a href="index.html#ux-mirror" class="nav-link">UX Mirror</a></li>
+                        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Case Study Content -->
+    <main class="case-study">
+        <header class="case-study-header">
+            <div class="container">
+                <h1 class="case-study-title">TD Bank Commercial Credit Onboarding</h1>
+                <p class="case-study-meta">Client: TD Bank | Role: UI/UX Designer & Frontend Engineer</p>
+                <img src="../assets/images/project-placeholder.jpg" alt="TD Bank Project Hero Image" class="case-study-hero-image"> <!-- Placeholder Image -->
+            </div>
+        </header>
+
+        <div class="case-study-content">
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">1. Project Overview & Challenge</h2>
+                    <p>TD Bank's commercial credit application process was historically entirely paper-based, presenting significant user experience hurdles and operational inefficiencies for both applicants and internal teams. My primary mission was to spearhead the UI/UX design and contribute to the front-end development, transforming this cumbersome manual system into a modern, intuitive, and efficient digital experience.</p>
+                    <p>The core objectives for this digital transformation were multifaceted:</p>
+                    <ul>
+                        <li><strong>Enhance User Experience:</strong> Dramatically simplify the application process for business applicants, making it less intimidating and more user-friendly.</li>
+                        <li><strong>Boost Completion Rates:</strong> Design an engaging flow to reduce drop-offs and increase the number of successfully submitted applications.</li>
+                        <li><strong>Minimize Errors:</strong> Reduce the inaccuracies and omissions common with paper forms through guided digital inputs and validations.</li>
+                        <li><strong>Streamline Internal Workflows:</strong> Create a digital pathway that would ease the burden on TD Bank's underwriting teams, improving their processing speed and data management.</li>
+                        <li><strong>Improve Data Accuracy:</strong> Ensure higher quality, more reliable data capture from the outset.</li>
+                    </ul>
+                    <p>Later in the project lifecycle, the scope expanded significantly with the need to comply with Section 1071 of the Dodd-Frank Act. This regulatory update mandated substantial changes, including a redesign of UX screen layouts for better data organization and the collection of extensive additional business and demographic information, particularly regarding beneficial ownership. This also involved a crucial backend shift from PDF/SFTP data submission to a new Synchronous API.</p>
+                    <p>As the <strong>UI/UX Designer & Frontend Engineer</strong>, I was responsible for the end-to-end design lifecycle – from initial research and information architecture to user flows, wireframing, high-fidelity prototypes, and UI design. I also actively contributed to the front-end development, ensuring a faithful and high-quality translation of design into code. This involved close collaboration with the Project Management Office (PMO), backend developers, and key TD Bank stakeholders across various departments.</p>
+                    <p><strong>Tools Used:</strong> Figma (for design and prototyping), FigJam (for user flows and ideation), Slack (for communication), Jira (for project tracking).</p>
+                    <p><strong>Timeline:</strong> The initial digital transformation design and V1 development took approximately <strong>3 months</strong>. The subsequent CFPB 1071 update phase was completed in a focused <strong>1-month</strong> period.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">2. The Design Process</h2>
+                    <h3>A. Discovery & Research (Original Design)</h3>
+                    <p>The project commenced with in-depth discovery to fully understand the existing paper-based landscape and its inherent pain points. My research activities included:</p>
+                    <ul>
+                        <li><strong>Stakeholder Interviews:</strong> Engaging with TD Bank Subject Matter Experts (SMEs), crucially including the lender underwriting teams whose feedback directly shaped the solution to address their operational challenges.</li>
+                        <li><strong>Process & Document Review:</strong> A meticulous analysis of the existing (and extensive) paper application forms and TD Bank's internal processing workflows.</li>
+                        <li><strong>Competitive Analysis:</strong> Evaluating other digital commercial loan applications in the market to identify best practices and potential pitfalls.</li>
+                    </ul>
+                    <p>Key insights revealed that the entirely offline process was a major deterrent for applicants and a source of inefficiency for TD. A primary UX challenge was strategically translating the sheer volume of required information into a logical and seamless digital journey. Partnering with a Know Your Business (KYB) service in a later iteration (the 3rd) further streamlined parts of the verification process.</p>
+                    <img src="../assets/images/project-placeholder.jpg" alt="Discovery Artifact Example" class="case-study-image">
+
+                    <h3>B. Information Architecture & User Flows (Original Design)</h3>
+                    <p>To manage the application's complexity, a robust information architecture was paramount. The paper form's contents were deconstructed and reorganized into a multi-step wizard flow, designed to guide users progressively. User flows were meticulously mapped out in FigJam to visualize these pathways, decision points, and potential edge cases. The core structure involved:</p>
+                    <ol>
+                        <li><strong>Getting Started & Consents:</strong> Initial disclosures and authority confirmations.</li>
+                        <li><strong>Business Information:</strong> Core details about the applicant's business, including financial data and credit purpose.</li>
+                        <li><strong>Applicant Information:</strong> Personal details for the primary business applicant.</li>
+                        <li><strong>Beneficial Owner Information:</strong> Details for all beneficial owners.</li>
+                        <li><strong>Additional Authorized Users:</strong> Optional section for adding other users to the account.</li>
+                        <li><strong>Review & Confirmation:</strong> Comprehensive summary screens allowing users to verify all entered data.</li>
+                        <li><strong>E-Consent & Submission:</strong> Final consents for electronic records and application submission.</li>
+                    </ol>
+                    <p>This sectional approach, with clear signposting and confirmation screens, aimed to make the extensive application feel manageable and less daunting.</p>
+                    <img src="../assets/images/project-placeholder.jpg" alt="User Flow Diagram Example" class="case-study-image">
+
+                    <h3>C. Ideation, Wireframing & Prototyping (Original Design)</h3>
+                    <p>The multi-step "wizard" paradigm was chosen early on to provide a clear, guided path, preventing users from feeling overwhelmed by a single, monolithic form. Low-fidelity wireframes explored various layouts for each step, focusing on clarity, intuitive navigation, and progressive disclosure of information. These were rapidly iterated upon and evolved into interactive high-fidelity prototypes in Figma. Key considerations included:</p>
+                    <ul>
+                        <li><strong>Contextual FAQs & Information:</strong> Embedding help text and tooltips (e.g., for NAICS codes) directly within the interface.</li>
+                        <li><strong>Ease of Editing:</strong> Ensuring users could easily navigate back and edit information, particularly during the final review stage.</li>
+                        <li><strong>Simplifying Complex Inputs:</strong> Techniques like clear visual grouping of related fields, pre-computation where possible (like NAICS code description lookups), and straightforward binary choices (Yes/No toggles) were employed to reduce cognitive load.</li>
+                    </ul>
+                    <img src="../assets/images/project-placeholder.jpg" alt="Wireframe Example" class="case-study-image">
+
+                    <h3>D. UI Design & Visual System (Original Design)</h3>
+                    <p>While TD Bank had established brand guidelines, I was afforded significant freedom to develop a new, modern aesthetic specifically for this digital application, aiming to set a fresh standard. The UI design, executed in Figma, prioritized:</p>
+                    <ul>
+                        <li><strong>Clarity and Readability:</strong> Using clean typography (Montserrat for headings, Inter for body) with strong hierarchy.</li>
+                        <li><strong>Accessibility:</strong> Adhering to contrast standards and ensuring intuitive form field design.</li>
+                        <li><strong>Intuitive Interaction Cues:</strong> Designing clear calls-to-action and visual feedback for user interactions.</li>
+                    </ul>
+                    <p>All visual elements, including color choices, typography, and iconography, were deliberately chosen to enhance usability, guide the user effectively, and build a sense of trust and professionalism.</p>
+                    <img src="../assets/images/project-placeholder.jpg" alt="UI Design Mockup Example" class="case-study-image">
+
+                    <h3>E. Iteration & Refinement (CFPB 1071 Update)</h3>
+                    <p>The CFPB 1071 update introduced a significant new layer of complexity, particularly with the Personal Demographic Information (PDI) questions mandated for beneficial owners. My approach was to:</p>
+                    <ul>
+                        <li><strong>Integrate Sensitively:</strong> Group these sensitive questions (ethnicity, race, sex/gender) into a distinct "Appendix" section. This decision was made to separate them slightly from the core financial application flow, minimizing disruption.</li>
+                        <li><strong>Provide Clear Context:</strong> Preface the PDI section with a clear disclaimer explaining the legal requirement for collecting this data and TD Bank's non-discrimination policy.</li>
+                        <li><strong>Ensure User Choice:</strong> Design clear opt-out choices ("I do not wish to provide this information") where permissible by law, respecting user privacy.</li>
+                    </ul>
+                    <p>The main UX challenge was that the nature of these PDI questions didn't align with the established input patterns of the rest of the application. This required careful design consideration to ensure their presentation was clear, respectful, and as unintrusive as possible while meeting strict regulatory demands. The screen layouts for other sections also needed redesign to accommodate additional new fields seamlessly.</p>
+
+                    <h3>F. Collaboration</h3>
+                    <p>This project was a testament to effective cross-functional teamwork. I worked in close concert with the Project Management Office (PMO) lead, dedicated Backend Developers, and numerous stakeholders within TD Bank, spanning product, legal, and compliance departments. My dual role as UI/UX Designer and Frontend Engineer proved invaluable in fostering a common understanding and facilitating a smoother, more efficient translation of design specifications into functional, robust code. Regular communication via Slack and structured meetings ensured alignment and rapid issue resolution throughout the project.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">3. Key Design Decisions & Trade-offs</h2>
+                    <p>Several critical design decisions shaped the TD Bank Commercial Credit Application:</p>
+                    <ul>
+                        <li><strong>Phased, Multi-Step Wizard Approach:</strong> Moving away from a single, overwhelming form, the application was broken down into a guided, multi-step digital wizard. This was fundamental to managing the inherent complexity, reducing user cognitive load, and encouraging completion.</li>
+                        <li><strong>Explicit Sectioning & Progress Indication:</strong> Clear visual and textual cues, such as distinct section titles (e.g., "Page X: Section Name," "Application Y of Z") and dynamic step indicators, provided users with constant orientation, managed their expectations regarding the application's length, and fostered a sense of accomplishment as they progressed.</li>
+                        <li><strong>Contextual Information & In-Flow Support:</strong> To demystify complex fields (like NAICS codes or specific financial inputs) and reduce reliance on external help, contextual information, tooltips, and clear instructional text were embedded directly within the interface at the point of need.</li>
+                        <li><strong>Strategic Placement of PDI Questions (CFPB Update):</strong> For the CFPB-mandated Personal Demographic Information, these sensitive questions were intentionally placed in a separate "Appendix" section. This decision, coupled with thorough explanations about their purpose, aimed to handle this legally required information respectfully, transparently, and with minimal disruption to the user's primary application flow.</li>
+                    </ul>
+                    <p>A key <strong>trade-off</strong> encountered during the initial design phase was:</p>
+                    <ul>
+                        <li><strong>Ideal UX vs. Technical Feasibility (Initial):</strong> My ideal vision for V1 included highly dynamic, real-time validation on every individual form field as the user typed. While technically achievable with more time, the existing backend infrastructure and APIs we needed to integrate with presented challenges for implementing this level of granular real-time feedback within the aggressive 3-month V1 timeline. Consequently, we opted for robust validation upon section completion and during the comprehensive final review stage. This ensured data accuracy and a solid user experience without overburdening the initial development effort or risking delays.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">4. Outcomes & Impact</h2>
+                    <h3>Impact of the Original Digital Transformation</h3>
+                    <p>The successful launch of the digitized commercial credit application marked a significant improvement for both TD Bank's customers and its internal operations:</p>
+                    <ul>
+                        <li><strong>Enhanced User Experience & Accessibility:</strong> Business applicants could now complete the entire process online, from any device, at their convenience. This dramatically improved accessibility and user satisfaction compared to the cumbersome paper-based system.</li>
+                        <li><strong>Increased Efficiency & Reduced Errors:</strong> The digital platform significantly reduced manual data entry for TD Bank staff and minimized the likelihood of errors and omissions common with handwritten forms. This resulted in cleaner, more reliable data from the outset and a far more efficient workflow for the underwriting teams.</li>
+                        <li><strong>Improved Application Completion Rates:</strong> By simplifying the complex application into manageable steps and providing clear, intuitive guidance, the digital form led to a notable increase in successful application submissions and a reduction in applicant drop-off rates.</li>
+                        <li><strong>Solid Foundation for Future Growth:</strong> The well-received V1 provided a robust and scalable digital platform. This strong foundation proved crucial for subsequent iterations and allowed for the relatively rapid integration of complex new requirements, such as those mandated by the CFPB 1071 update.</li>
+                        <li><strong>Positive Stakeholder Feedback:</strong> The new digital solution garnered positive feedback from internal TD Bank teams. The underwriting department, in particular, highlighted the benefits of receiving more legible, complete, and readily processable application data, streamlining their review and decision-making processes.</li>
+                    </ul>
+                    <h3>Impact of the CFPB 1071 Update</h3>
+                    <p>The subsequent update ensured TD Bank achieved <strong>critical regulatory compliance</strong> with Section 1071 of the Dodd-Frank Act. Furthermore, the transition to a new Synchronous API for data submission modernized this crucial backend process, enhancing data transfer speed, accuracy, and security compared to the previous PDF and SFTP methods.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">5. Key Learnings</h2>
+                    <p>This challenging yet rewarding project with TD Bank provided several key learnings:</p>
+                    <ul>
+                        <li><strong>The Power of User-Centricity in Complex Domains:</strong> Even in highly regulated and data-intensive environments like commercial finance, deeply understanding and advocating for user needs is paramount. Successfully transforming a complex paper-based process into an intuitive digital product hinges on this user-first approach, particularly when also needing to meet the operational requirements of internal teams like underwriters.</li>
+                        <li><strong>Collaboration is Non-Negotiable:</strong> Spearheading a project of this magnitude for a major financial institution reinforced the critical importance of deep, continuous engagement with diverse stakeholders. Building strong partnerships across departments – from product and legal to compliance, underwriting, and backend development – and truly understanding their unique perspectives and constraints was essential to crafting a holistic solution that was user-friendly, operationally sound, and fully compliant.</li>
+                        <li><strong>Iterative Design and Adaptability:</strong> The necessity of integrating the CFPB 1071 requirements underscored the value of an iterative design process and maintaining a flexible system. Being able to adapt the existing design to accommodate significant new (and often non-negotiable) requirements, without fundamentally breaking the user experience, is a vital skill in product development.</li>
+                    </ul>
+                    <p>I am particularly proud of having successfully led the charge in translating an extraordinarily complex, purely paper-based process into a modern, intuitive digital experience. This transformation demonstrably improved the application journey for businesses seeking credit and significantly streamlined critical internal workflows for TD Bank. My dual capability in UI/UX design and front-end engineering allowed for a uniquely cohesive vision and efficient execution, directly contributing to the project's success.</p>
+                </div>
+            </section>
+        </div> <!-- End case-study-content wrapper -->
+
+        <nav class="case-study-navigation">
+            <div class="container">
+                <a href="#" class="btn btn-outline">&larr; Previous Project</a>
+                <a href="index.html#projects" class="btn btn-secondary">Back to All Projects</a> <!-- Link to projects section -->
+                <a href="#" class="btn btn-outline">Next Project &rarr;</a>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Footer (Matches index.html structure) -->
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">tayler.id</div>
+                    <p class="footer-description">
+                        Senior UX Designer & Frontend Developer specialized in creating human-centered digital
+                        experiences that combine aesthetics with functionality.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/tayler-id?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tayler-ramsay/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <!-- Removed placeholder social links -->
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">Navigation</h4>
+                    <ul class="footer-links">
+                         <li><a href="index.html#home" class="footer-link">Home</a></li>
+                        <li><a href="index.html#about" class="footer-link">About</a></li>
+                        <li><a href="index.html#skills" class="footer-link">Skills</a></li>
+                        <li><a href="index.html#projects" class="footer-link">Projects</a></li>
+                        <li><a href="index.html#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-links-group">
+                    <h4 class="footer-links-title">Projects</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#case-study-health">Health App</a></li>
+                        <li class="footer-link"><a href="#case-study-design-system">Design System</a></li>
+                        <li class="footer-link"><a href="#ux-mirror">UX Mirror</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                &copy; <span id="footer-year">2025</span> Tayler Ramsay. All rights reserved. <!-- Updated copyright and span ID -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/animations.js"></script>
+    <!-- Add other necessary scripts if case study page needs them -->
+     <script>
+        // Basic JS for mobile menu and year
+        document.addEventListener('DOMContentLoaded', () => {
+            // Year
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+            // Mobile Menu (using header selectors for specificity)
+            const mobileMenuBtn = document.querySelector('.header .mobile-menu-btn');
+            const navList = document.querySelector('.header .nav-list');
+            const overlay = document.querySelector('.header .mobile-menu-overlay'); 
+            const hamburgerMenu = document.querySelector('.header .hamburger-menu');
+
+            if (mobileMenuBtn && navList && hamburgerMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navList.classList.toggle('active');
+                    hamburgerMenu.classList.toggle('open');
+                     if(overlay) overlay.classList.toggle('active');
+                     document.body.classList.toggle('menu-open'); // Consider if body class is needed here too
+                });
+                 if(overlay) {
+                    overlay.addEventListener('click', () => {
+                        navList.classList.remove('active');
+                        hamburgerMenu.classList.remove('open');
+                        overlay.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    });
+                 }
+                 // Close on link click
+                 const navLinks = document.querySelectorAll('.header .nav-link');
+                 navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navList.classList.contains('active')) {
+                            navList.classList.remove('active');
+                            hamburgerMenu.classList.remove('open');
+                            if(overlay) overlay.classList.remove('active');
+                            document.body.classList.remove('menu-open');
+                        }
+                    });
+                 });
+            }
+             // Update footer year dynamically
+            const footerYearSpan = document.getElementById('footer-year'); // Corrected ID selector
+            if (footerYearSpan) {
+                footerYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>
